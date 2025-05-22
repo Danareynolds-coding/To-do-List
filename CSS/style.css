@@ -10,10 +10,14 @@ body{
 }
 .todo h2{
     display:flex;
-    align-items: center;
+    text-align: center;
     color: #de526a; 
-    margin-bottom:20px;
-   
+    margin-bottom:10px;
+}
+.todo p{
+    color: #de526a;
+    text-align: center;
+    margin:5px;
 }
  .container{
     width:100% ;
@@ -67,6 +71,27 @@ ul li{
     cursor:pointer;
     position: relative;
     }
+
+ul li.checked{
+    background-color:#de526a;
+    text-decoration: line-through; 
+
+ul li span{
+    position:absolute;
+    width:40px; 
+    height: 40px;
+    font-size: 22px;
+    color:#de526a;
+    line-height: 40px;
+    text-align: center;
+    right:0;
+}
+ul li span:hover{
+    background-color: rgb(193, 17, 111);
+    border-radius: 50%;
+} 
+
+/* ******COULD NOT GET MARGIN CORRECT*HOW ??????******************* */
 /* ul li::before{
     content:"";
     position:absolute;
@@ -77,26 +102,7 @@ ul li{
     background-size: cover;
     background-position: center;
     } */
-ul li.checked{
-    background-color:#de526a;
-    text-decoration: line-through; */
-
-/* 
-ul li.checked::before{
+/* ul li.checked::before{
     background-image: url(../images/checked.png);
     
-}
-ul li span{
-    position:absolute;
-    width:30px; 
-    height: 30px;
-    font-size: 22px;
-    color:#de526a;
-    line-height: 40px;
-    text-align: center;
-    margin:0;
-}
-ul li span:hover{
-    background-color: rgb(193, 17, 111);
-    border-radius: 50%;
-} 
+} */
