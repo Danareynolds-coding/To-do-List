@@ -1,0 +1,102 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../images/a-cluster-of-curling-pink-silver-and-white-like-ink-in-water.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.todo h2{
+    display:flex;
+    align-items: center;
+    color: #de526a; 
+    margin-bottom:20px;
+   
+}
+ .container{
+    width:100% ;
+    min-height: 100vh;
+    padding: 10px;
+   }
+.todo{
+    width: 100%;
+    max-width:540px ;
+    background-color: rgba(252, 242, 230, 0.539);
+    margin:100px auto 20px;
+    padding:40px 30px 70px;
+    border-radius: 10px;
+}
+.row{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius:30px ;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    }
+button{
+    border-radius: 4cqmax;
+    background-color: rgb(249, 201, 232);
+    border: 2px solid rgb(218, 61, 87);
+    color:hsl(340, 60%, 39%);
+    font-weight: 700;
+    font-size:16px;
+    cursor:pointer;
+    padding:8px;
+    
+}
+#task-input{
+    flex:1;
+    border: 2px solid rgb(193, 94, 110);
+    border-radius: 4cqmax;
+    color:rgb(158, 40, 79);
+    background-color: rgb(249, 201, 232);
+    padding:10px;
+}
+ul li{
+    display:flex;
+    align-items: flex-end;
+    padding:12px 8px 12px 50px;
+    list-style: none;
+    font-size: 17px;
+    color:rgb(158, 40, 79);
+    font-weight: 700;
+    user-select: none;
+    cursor:pointer;
+    position: relative;
+    }
+/* ul li::before{
+    content:"";
+    position:absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background: url(../images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    } */
+ul li.checked{
+    background-color:#de526a;
+    text-decoration: line-through; */
+
+/* 
+ul li.checked::before{
+    background-image: url(../images/checked.png);
+    
+}
+ul li span{
+    position:absolute;
+    width:30px; 
+    height: 30px;
+    font-size: 22px;
+    color:#de526a;
+    line-height: 40px;
+    text-align: center;
+    margin:0;
+}
+ul li span:hover{
+    background-color: rgb(193, 17, 111);
+    border-radius: 50%;
+} 
